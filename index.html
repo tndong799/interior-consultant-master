@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="./image/devchallenges.png" />
+
+    <!-- <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <link href="./style/reset.css" rel="stylesheet" />
+    <link href="./style/style.css" rel="stylesheet" />
+
+
+    <title>Devchallenges</title>
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__logo">This Interior</div>
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link header__menu-link--active">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Colection</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">About</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Contact</a>
+            </li>
+          </ul>
+          <div class="header__menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </header>
+
+      <section class="modern">
+        <div class="container modern__container">
+          <div class="modern__intro">
+            <h2 class="modern__title">Modern interior</h2>
+            <p class="modern__desc">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+            <div class="modern__read-more">Read more</div>
+          </div>
+          <div class="modern__about">
+            <img src="./image/photo1.png" alt="" class="modern__img">
+            <div class="modern__designer">
+              <div class="modern__designer-about">
+                <img src="./image/photo2.png" alt="" class="modern__designer-img">
+                <div class="modern__designer-details">
+                  <h5 class="modern__designer-name">Aliza Webber</h5>
+                  <p class="modern__designer-position">Interior designer</p>          
+                </div>
+              </div>
+              <div class="modern__designer-title">Designed in 2020 by Aliza Webber</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>TranNgocDong @ DevChallenges.io</p>
+      </footer>
+    </div>
+
+
+    <script>
+      var btn = document.querySelector('.header__menu-icon');
+      var menu = document.querySelector('.header__menu-list');
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        btn.classList.toggle('active')
+      })
+
+    </script>
+  </body>
+</html>

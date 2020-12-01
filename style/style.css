@@ -1,0 +1,255 @@
+html {
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    line-height: 1.4;
+    font-weight: 400;
+    background-color: #181719;
+    position: relative;
+}
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 7.7rem;
+    padding-right: 7.7rem;
+}
+.header{
+    padding-top: 4rem;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.4rem;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.6rem;
+    border: 1px solid;
+    padding: .8rem;
+    text-transform: uppercase;
+}
+
+.header__menu-list{
+    display: flex;
+}
+.header__menu-item{
+    margin-left: 86px;
+}
+.header__menu-link{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+}
+.header__menu-link--active{
+    font-weight: bold;
+}
+.header__menu-icon{
+    display: none;
+    cursor: pointer;
+}
+.header__menu-icon i{
+    font-size: 3rem;
+}
+.header__menu-icon.active i::before{
+    content: "\f00d";
+}
+
+.modern{
+    margin-top: 17rem;
+}
+.modern__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modern__title{
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 6rem;
+}
+.modern__desc{
+    margin-top: 4rem;
+    font-weight: 300;
+    font-size: 2.4rem;
+    max-width: 41rem;
+}
+.modern__read-more{
+    margin-top: 4.8rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: 2.2rem;
+}
+.modern__read-more:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.modern__img{
+    width: 75rem;
+}
+
+
+.modern__about{
+    position: relative;
+}
+.modern__designer{
+    background-color: #181719;
+    padding-left: 3.2rem;
+    padding-top: 2.4rem;
+    width: 41rem;
+    position: absolute;
+    bottom: -10rem;
+    right: 3.2rem;
+}
+.modern__designer-about{
+    display: flex;
+    align-items: center;
+}
+.modern__designer-details{
+    padding-left: 1.6rem;
+}
+.modern__designer-img{
+    width: 5rem;
+    border-radius: 50%;
+}
+.modern__designer-name{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+.modern__designer-position{
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #828282;
+}
+.modern__designer-title{
+    margin-top: 2rem;
+    max-width: 24rem;
+    font-family: Lora;
+    font-weight: 700;
+    font-size: 2.4rem;
+    list-style: 3.1rem;
+}
+
+.footer{
+    margin-top: 21rem;
+    margin-bottom: 4.6rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 480px){
+    .container{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+    .header{
+        padding-top: 2rem;
+    }
+    .header__menu-list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: #181719;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 2;
+        transition: all 0.3s ease;
+    }
+    .header__menu-list.active{
+        left: 0;
+    }
+    .header__menu-item{
+        margin-left: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .header__menu-icon{
+        display: block;
+        z-index: 3;
+    }
+    .modern{
+        margin-top: 4rem;
+    }
+    .modern__title{
+        font-size: 3.6rem;
+    }
+    .modern__desc{
+        margin-top: 2.4rem;
+        font-weight: 300;
+        font-size: 1.4rem;
+        max-width: 20rem;
+    }
+    .modern__read-more{
+        margin-top: 2.5rem;
+        font-size: 1.4rem;
+        font-style: normal;
+        line-height: 1.7rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .modern__container{
+        flex-direction: column;
+    }
+    .modern__designer{
+        width: 30rem;
+        padding-left: 1.8rem;
+        padding-top: 1.2rem;
+        bottom: -5rem;
+    }
+    .modern__designer-img{
+        width: 4rem;
+    }
+    .modern__designer-name{
+        font-size: 1.2rem;
+    }
+    .modern__designer-position{
+        font-size: 1rem;
+    }
+    .modern__designer-title{
+        font-size: 1.8rem;
+    }
+    .footer{
+        margin-top: 15rem;
+        margin-bottom: 2.4rem;
+    }
+    .footer p{
+        display: inline;
+        padding: 1rem;
+        border-top: 1px solid;
+    }
+}
